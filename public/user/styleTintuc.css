@@ -1,0 +1,169 @@
+.news {
+  display: flex;
+  padding-top: 50px; }
+  .news .menu ul {
+    flex-direction: column; }
+    .news .menu h6{
+       background: #ec3237;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 18px;
+        padding-left: 10px;
+        border-radius: 0;
+        border: 2px solid #ec3237;
+    }
+     .news .menu ul {
+    flex-direction: column; }
+    .news .menu ul li {
+      border-left: 2px solid #fff; }
+      .news .menu ul li a {
+        text-transform: capitalize;
+        color: #634b4b;
+        padding-left: 10px;
+        line-height: 40px;
+        background-color: #ec3237;
+        border-radius: 0;
+        border: 2px solid #ec3237;
+        color:#fff; }
+        
+      @media screen and (max-width: 576px) {
+        .news .menu ul li {
+          flex: 0 0 100%;
+          max-width: 100%; } }
+      .news .menu ul li:hover {
+        border-left: 2px solid red; }
+  .news .content {
+    padding: 0; }
+    .news .content h5 {
+      text-transform: uppercase;
+      font-size: 20px;
+      color: #ec3237; }
+      .news .content h5::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #4a3333;
+        display: block; }
+    .news .content .item {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px 0; }
+      .news .content .item .img {
+        padding: 0;
+        border: 1px solid #f2dfdf; }
+        .news .content .item .img img {
+          width: 100%;
+          max-width: 100%;
+          height: 100%;
+          max-height: 100%;
+          position: relative; }
+        .news .content .item .img .overlay {
+          position: absolute;
+          top: 228px;
+          left: 0;
+          width: 100%;
+          height: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          opacity: 0; }
+          .news .content .item .img .overlay a {
+            color: #fff;
+            font-size: 25px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+            opacity: 0; }
+        .news .content .item .img:hover .overlay {
+          opacity: 1;
+          top: 0;
+          height: 100%;
+          transition: 0.4s; }
+        .news .content .item .img:hover a {
+          opacity: 1; }
+        @media screen and (max-width: 768px) {
+          .news .content .item .img {
+            display: none; } }
+      .news .content .item .col-8 h6 {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #4a3333; }
+      .news .content .item .col-8 p {
+        color: #634b4b; }
+      .news .content .item::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #f2dfdf;
+        display: block;
+        margin-top: 10px; }
+  @media screen and (max-width: 767px) {
+    .news {
+      display: none; } }
+
+.directional {
+  display: flex;
+  justify-content: end; }
+  .directional .next {
+    margin-bottom: 8px; }
+    .directional .next a {
+      border-left: 2px solid;
+      text-decoration: none;
+      text-transform: capitalize;
+      border-right: 2px solid;
+      color: #2e2078;
+      padding: 0 3px;
+      margin-right: 10px; }
+  .directional .prev {
+    margin-bottom: 8px; }
+    .directional .prev a {
+      border-left: 2px solid;
+      text-decoration: none;
+      text-transform: capitalize;
+      border-right: 2px solid;
+      color: #2e2078;
+      padding: 0 3px; }
+  @media screen and (max-width: 767px) {
+    .directional {
+      display: none; } }
+
+.width768 ul {
+  flex-direction: column; }
+  .width768 ul li:first-child {
+    border: 2px solid #ec3237; }
+    .width768 ul li:first-child a {
+      background: #ec3237;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 18px;
+      padding-left: 10px;
+      border-radius: 0;
+      border: 2px solid #ec3237; }
+      .width768 ul li:first-child a:hover {
+        margin-left: 0;
+        color: #fff; }
+    .width768 ul li:first-child:hover {
+      border-left: 2px solid #ec3237; }
+  .width768 ul li {
+    border-left: 2px solid #fff; }
+    .width768 ul li a {
+      text-transform: capitalize;
+      color: #634b4b;
+      padding-left: 10px;
+      line-height: 40px;
+      background-color: #fff;
+      border-radius: 0;
+      border: 2px solid #fff; }
+      .width768 ul li a:hover {
+        margin-left: 25px;
+        transition: 0.4s;
+        color: red; }
+    .width768 ul li:hover {
+      border-left: 2px solid red; }
+@media screen and (min-width: 768px) {
+  .width768 {
+    display: block; } }
+@media screen and (min-width: 768px) {
+  .width768 {
+    display: none; } }
